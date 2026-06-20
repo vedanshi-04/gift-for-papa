@@ -63,13 +63,24 @@
 
     <!-- SCREEN 3: Final Letter Screen -->
     <div id="screen3" class="screen">
-        <div class="card" style="max-width: 500px; text-align: left; max-height: 80vh; overflow-y: auto;">
+        <div class="card" style="max-width: 500px; text-align: left; max-height: 85vh; overflow-y: auto;">
             <h2 style="text-align: center; margin-bottom: 15px;">For You, Papa 🤗</h2>
             <p style="line-height: 1.6; font-size: 15px; color: #444;">
                 Dear Papa,<br><br>
                 Happy Father's Day to my hero and my guiding light. Thank you for everything you do for us. Your patience, kindness, and hard work inspire me every single day...<br><br>
-                VEDANSHI❤️
+                [Aap apna poora letter yahan likh sakti hain]
             </p>
+
+            <!-- Family Photo Section -->
+            <div style="text-align: center; margin-top: 25px;">
+                <p style="font-weight: bold; color: #8a9a86; margin-bottom: 10px;">Our Family ❤️</p>
+                <img src="family.jpg" alt="Family Photo" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            </div>
+
+            <!-- Final Action Button -->
+            <div style="text-align: center; margin-top: 20px;">
+                <button onclick="finalThankYou()" style="width: 100%;">Love You Papa! ❤️</button>
+            </div>
         </div>
     </div>
 
@@ -122,6 +133,10 @@
         function showLetter() {
             document.getElementById('screen2').classList.remove('active');
             document.getElementById('screen3').classList.add('active');
+        }
+
+        function finalThankYou() {
+            alert("Thank you for being the best Papa in the world! Happy Father's Day! 🎉❤️");
         }
     </script>
 </body>
